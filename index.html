@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>TestMyCode by testmycode</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>TestMyCode</h1>
+          <h2></h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/testmycode" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h3>
+<a name="contributing-to-testmycode-repositories" class="anchor" href="#contributing-to-testmycode-repositories"><span class="octicon octicon-link"></span></a>Contributing to TestMyCode repositories</h3>
+
+<ol>
+<li>Create issue to spec either feature or fix to an issue. 
+1.1 Before implementing a new feature ask for comments from maintainers before jumping and implementing it
+A spec for the feature should be created prior to implementing it.</li>
+<li>Fork correct TestMyCode repository</li>
+<li>Set up development environment as described in each projects Readme.md.
+Note that only general instructions are given.
+All products can be developed with latest Ubuntu LTS. Root permissions may be required-</li>
+<li>Create your own branch for your fix or feature. We prefer descriptive branch names.</li>
+<li>Write the code and tests.</li>
+<li><p>Remember to run whole test suite.</p></li>
+</ol>
+
+<ul>
+<li><p>Submit your pull request early to get feedback and new implementation ideas earlier.</p></li>
+<li><p>For each pull request it often takes multiple iterations of code review
+form maintainers so better to start early for the best developer experience.</p></li>
+<li><p>Usually it takes at most two to three days for a code review, however
+with bigger changes time might be longer.</p></li>
+<li><p>During this progress we appreciate you to keep maintainers in loop with
+your development and implementation. We may give you helpful tips during
+the progress as well as early critique.
+Especially when refactoring start by discussing about your idea with us.</p></li>
+</ul>
+
+<h3>
+<a name="coding-conventions" class="anchor" href="#coding-conventions"><span class="octicon octicon-link"></span></a>Coding conventions</h3>
+
+<h4>
+<a name="ruby" class="anchor" href="#ruby"><span class="octicon octicon-link"></span></a>Ruby</h4>
+
+<p>TMC-server and other ruby products follows a simple set of coding style conventions:</p>
+
+<ul>
+<li>Two spaces, no tabs (for indentation).</li>
+<li>No trailing whitespace. Blank lines should not have any spaces.</li>
+<li>Indent after private/protected.</li>
+<li>Use Ruby &gt;= 1.9 syntax for hashes. Prefer { a: :b } over { :a =&gt; :b }.</li>
+<li>Prefer &amp;&amp;/|| over and/or.</li>
+<li>Prefer class &lt;&lt; self over self.method for class methods.</li>
+<li>Use MyClass.my_method(my_arg) not my_method( my_arg ) or my_method
+my_arg.</li>
+<li>Use a = b and not a=b.</li>
+<li>Prefer method { do_stuff } instead of method{do_stuff} for single-line
+blocks.</li>
+<li>Follow the conventions in the source you see used already.</li>
+</ul>
+
+<h4>
+<a name="java" class="anchor" href="#java"><span class="octicon octicon-link"></span></a>Java</h4>
+
+<ul>
+<li>Four spaces, no tabs (for indentation).</li>
+<li>Follow the conventions in the source you see used already.</li>
+<li>No trailing whitespace. Blank lines should not have any spaces.</li>
+<li>No blank lines after method definitions ifs, whiles etc.</li>
+<li>No unnecessary final attributes inside methods or for parameters</li>
+<li>No space between method name and opening parenthesis; one space between keywords like if, while, ... and opening parenthesis</li>
+<li>Follow <a href="http://google-styleguide.googlecode.com/svn/trunk/javaguide.html">http://google-styleguide.googlecode.com/svn/trunk/javaguide.html</a> unless particular guidance overwritten here.</li>
+</ul>
+
+<h4>
+<a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a>Javascript</h4>
+
+<ul>
+<li>No tabs (for indentation).</li>
+<li>No trailing whitespace. Blank lines should not have any spaces.</li>
+<li>Follow <a href="http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml">http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml</a> unless particular guidance overwritten here.</li>
+</ul>
+
+<p>The above are guidelines - please use your best judgment in using them.
+Most importantly keep using the same coding standards as already used in
+that particular file. If particular file does not comply with guidelines above, feel free to update that file to comply with guidelines. </p>
+
+<h3>
+<a name="reporting-issues" class="anchor" href="#reporting-issues"><span class="octicon octicon-link"></span></a>Reporting issues</h3>
+
+<p>We accept only issues reported in GitHub. However before reporting issues to GitHub discussion with maintainers is advised.</p>
+
+<p>Do a search in GitHub under Issues in case it has already been reported.
+If you do not find any issue addressing it you may proceed to open a new
+one. (In case of security issues, alert maintainers in private, don't
+post it to out public issue tracker.)</p>
+
+<p>Your issue report should contain a title and a clear description of the issue at the bare minimum. 
+You should include as much relevant information as possible and should at least post a code sample that
+demonstrates the issue or steps to reproduce the issue. 
+It would be even better if you could include a unit test that shows how the expected behavior is not occurring. 
+Your goal should be to make it easy for yourself - and others - to replicate the bug and figure out a fix.</p>
+
+<h3>
+<a name="creating-feature-requests" class="anchor" href="#creating-feature-requests"><span class="octicon octicon-link"></span></a>Creating feature requests</h3>
+
+<p>We accept also feature requests as issues reported in GitHub, the issue should clearly indicate that it is a feature request.</p>
+
+<p>However it is suggested to first discuss with maintainers about your feature request to make sure creating new issue to GitHub.</p>
+
+<h3>
+<a name="testing-others-pull-requests" class="anchor" href="#testing-others-pull-requests"><span class="octicon octicon-link"></span></a>Testing others pull requests</h3>
+
+<p>To apply someone's changes you need first to create a dedicated branch:</p>
+
+<pre lang="shell"><code>$ git checkout -b testing_branch
+</code></pre>
+
+<p>Then you can use their remote branch to update your codebase. For
+example, let's say the GitHub user Jamox has forked and pushed to a
+topic branch "feature" located at <a href="https://github.com/Jamox/tmc-server">https://github.com/Jamox/tmc-server</a>.</p>
+
+<pre lang="shell"><code>$ git remote add Jamox git://github.com/Jamox/tmc-server.git
+$ git pull Jamox feature
+</code></pre>
+
+<p>After applying their branch, test it out!</p>
+        </section>
+
+        <footer>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
