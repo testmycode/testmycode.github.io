@@ -129,13 +129,13 @@ in smaller iterations and have code reviewed and merged at reasonable checkpoint
 <h3>
 <a name="testing-someones-pull-request" class="anchor" href="#testing-someones-pull-request"><span class="octicon octicon-link"></span></a>Testing someone's pull request</h3>
 
-<p>To apply someone's changes you need first to create a dedicated branch:</p>
+<p>First, create a branch to merge the changes into:</p>
 
 <pre lang="shell"><code>$ git checkout -b testing_branch
 </code></pre>
 
-<p>Then you can use their remote branch to update your codebase. For
-example, let's say the GitHub user <code>jamox</code> has forked and pushed to a
+<p>Now merge their remote branch into your testing branch.
+For example, let's say the GitHub user <code>jamox</code> has forked and pushed to a
 topic branch "feature" located at <a href="https://github.com/Jamox/tmc-server">https://github.com/Jamox/tmc-server</a>.</p>
 
 <pre lang="shell"><code>$ git remote add jamox git://github.com/jamox/tmc-server.git
@@ -143,6 +143,12 @@ $ git pull jamox feature
 </code></pre>
 
 <p>Remember to run database migrations and recompile things as necessary.</p>
+
+<p>When you're done, switch back to the master branch and delete the testing branch.</p>
+
+<pre lang="shell"><code>$ git checkout master
+$ git branch -D testing_branch
+</code></pre>
         </section>
 
         <footer>
