@@ -49,77 +49,59 @@ in smaller iterations and have code reviewed and merged at reasonable checkpoint
 <h3>
 <a name="coding-conventions" class="anchor" href="#coding-conventions"><span class="octicon octicon-link"></span></a>Coding conventions</h3>
 
+<p>Mostly just try to stick to the style you see used in the project.</p>
+
 <h4>
 <a name="ruby" class="anchor" href="#ruby"><span class="octicon octicon-link"></span></a>Ruby</h4>
 
-<p>TMC-server and other ruby products follows a simple set of coding style conventions:</p>
-
 <ul>
-<li>Two spaces, no tabs (for indentation).</li>
-<li>No trailing whitespace. Blank lines should not have any spaces.</li>
-<li>Indent after private/protected.</li>
+<li>Indentation: two spaces, no tabs.</li>
+<li>No trailing whitespace, even on blank lines.</li>
+<li>Indent before private/protected.</li>
 <li>Use Ruby &gt;= 1.9 syntax for hashes. Prefer { a: :b } over { :a =&gt; :b }.</li>
-<li>Prefer &amp;&amp;/|| over and/or.</li>
-<li>Prefer class &lt;&lt; self over self.method for class methods.</li>
-<li>Use MyClass.my_method(my_arg) not my_method( my_arg ) or my_method
-my_arg.</li>
-<li>Use a = b and not a=b.</li>
-<li>Prefer method { do_stuff } instead of method{do_stuff} for single-line
-blocks.</li>
-<li>Follow the conventions in the source you see used already.</li>
+<li>Prefer <code>&amp;&amp;</code> and <code>||</code> over <code>and</code> and <code>or</code>.</li>
+<li>Prefer <code>extend self</code> over <code>def self.method</code> for modules.</li>
+<li>Write method calls like <code>foo(bar, baz)</code> (parenthesis may be omitted in very clear cases, but it is not required)</li>
+<li>Spaces around operators: <code>a = b + c</code>, not <code>a=b+c</code>.</li>
+<li>Single-line blocks should use braces like this: <code>foo {|x| stuff(x) }</code>.</li>
+<li>Multiline blocks should use <code>do |x|</code> syntax.</li>
 </ul>
 
 <h4>
 <a name="java" class="anchor" href="#java"><span class="octicon octicon-link"></span></a>Java</h4>
 
 <ul>
-<li>Four spaces, no tabs (for indentation).</li>
-<li>Follow the conventions in the source you see used already.</li>
-<li>No trailing whitespace. Blank lines should not have any spaces.</li>
+<li>Indentation: four spaces, no tabs.</li>
+<li>No trailing whitespace, even on blank lines.</li>
 <li>No blank lines after method definitions ifs, whiles etc.</li>
 <li>No unnecessary final attributes inside methods or for parameters</li>
-<li>No space between method name and opening parenthesis; one space between keywords like if, while, ... and opening parenthesis</li>
-<li>Follow <a href="http://google-styleguide.googlecode.com/svn/trunk/javaguide.html">http://google-styleguide.googlecode.com/svn/trunk/javaguide.html</a> unless particular guidance overwritten here.</li>
+<li>Method calls have no space before or after paren: <code>foo(bar, baz)</code>.</li>
+<li>Keywords have space before paren: <code>if (foo)</code> etc.</li>
+<li>In other matters, refer to <a href="http://google-styleguide.googlecode.com/svn/trunk/javaguide.html">http://google-styleguide.googlecode.com/svn/trunk/javaguide.html</a> unless the surrounding code clearly and consistently disagrees.</li>
 </ul>
 
 <h4>
 <a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a>Javascript</h4>
 
 <ul>
-<li>No tabs (for indentation).</li>
-<li>No trailing whitespace. Blank lines should not have any spaces.</li>
-<li>Follow <a href="http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml">http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml</a> unless particular guidance overwritten here.</li>
+<li>Indentation: two spaces, no tabs.</li>
+<li>No trailing whitespace, even on blank lines.</li>
+<li>Follow <a href="http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml">http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml</a> unless the surrounding code clearly and consistently disagrees.</li>
 </ul>
 
-<p>The above are guidelines - please use your best judgment in using them.
-Most importantly keep using the same coding standards as already used in
-that particular file. If particular file does not comply with guidelines above, feel free to update that file to comply with guidelines. </p>
+<p>Some files in the project may not completely adhere to the above guidelines. Feel free to update any such files as you go.</p>
 
 <h3>
 <a name="reporting-issues" class="anchor" href="#reporting-issues"><span class="octicon octicon-link"></span></a>Reporting issues</h3>
 
-<p>We accept only issues reported in GitHub. However before reporting issues to GitHub discussion with maintainers is advised.</p>
+<p>It's best to report issues in the correct GitHub repository. If in doubt, report to either the <a href="https://github.com/testmycode/tmc-server">tmc-server</a> or the <a href="https://github.com/testmycode/tmc-netbeans">tmc-netbeans</a> repository.</p>
 
-<p>Do a search in GitHub under Issues in case it has already been reported.
-If you do not find any issue addressing it you may proceed to open a new
-one. (In case of security issues, alert maintainers in private, don't
-post it to out public issue tracker.)</p>
+<p>Before reporting, please do a search to see if the issue has already been reported.</p>
 
-<p>Your issue report should contain a title and a clear description of the issue at the bare minimum. 
-You should include as much relevant information as possible and should at least post a code sample that
-demonstrates the issue or steps to reproduce the issue. 
-It would be even better if you could include a unit test that shows how the expected behavior is not occurring. 
-Your goal should be to make it easy for yourself - and others - to replicate the bug and figure out a fix.</p>
+<p>Feature requests are also welcome in the issue tracker.</p>
 
 <h3>
-<a name="creating-feature-requests" class="anchor" href="#creating-feature-requests"><span class="octicon octicon-link"></span></a>Creating feature requests</h3>
-
-<p>We accept also feature requests as issues reported in GitHub, the issue should clearly indicate that it is a feature request.</p>
-
-<p>However it is suggested to first discuss with maintainers about your feature request to make sure creating new issue to GitHub.</p>
-
-<h3>
-<a name="testing-others-pull-requests" class="anchor" href="#testing-others-pull-requests"><span class="octicon octicon-link"></span></a>Testing others pull requests</h3>
+<a name="testing-someones-pull-request" class="anchor" href="#testing-someones-pull-request"><span class="octicon octicon-link"></span></a>Testing someone's pull request</h3>
 
 <p>To apply someone's changes you need first to create a dedicated branch:</p>
 
@@ -127,14 +109,14 @@ Your goal should be to make it easy for yourself - and others - to replicate the
 </code></pre>
 
 <p>Then you can use their remote branch to update your codebase. For
-example, let's say the GitHub user Jamox has forked and pushed to a
+example, let's say the GitHub user <code>jamox</code> has forked and pushed to a
 topic branch "feature" located at <a href="https://github.com/Jamox/tmc-server">https://github.com/Jamox/tmc-server</a>.</p>
 
-<pre lang="shell"><code>$ git remote add Jamox git://github.com/Jamox/tmc-server.git
-$ git pull Jamox feature
+<pre lang="shell"><code>$ git remote add jamox git://github.com/jamox/tmc-server.git
+$ git pull jamox feature
 </code></pre>
 
-<p>After applying their branch, test it out!</p>
+<p>Remember to run database migrations and recompile things as necessary.</p>
         </section>
 
         <footer>
