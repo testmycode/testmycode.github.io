@@ -29,17 +29,41 @@
         <hr>
 
         <section id="main_content">
-          <h3>
-<a name="contributing-to-testmycode-repositories" class="anchor" href="#contributing-to-testmycode-repositories"><span class="octicon octicon-link"></span></a>Contributing to TestMyCode repositories</h3>
+          <p>Test My Code ("TMC") is a tool to automate most of the exercise checking when teaching programming. It runs code submitted by students, gives feedback if tests fail and maintains a scoreboard. This allows for lots of small exercises without the need for course instructors to manually go through all of them.</p>
+
+<p>The system has been used with great success by thousands of users in the University of Helsinki elementary CS courses as well as their <a href="http://mooc.fi/">open MOOC versions</a>.</p>
+
+<h3>
+<a name="the-code" class="anchor" href="#the-code"><span class="octicon octicon-link"></span></a>The code</h3>
+
+<p>All of the code is available under <a href="https://github.com/testmycode">https://github.com/testmycode</a></p>
+
+<p>The main components are:</p>
+
+<ul>
+<li><a href="https://github.com/testmycode/tmc-server">The server</a></li>
+<li><a href="https://github.com/testmycode/tmc-netbeans">The NetBeans plugin</a></li>
+<li><a href="https://github.com/testmycode/tmc-sandbox">The UML sandbox</a></li>
+</ul>
+
+<p>The current maintainers are <a href="https://github.com/mpartel">@mpartel</a> and <a href="https://github.com/jamox">@jamox</a>.</p>
+
+<p>IRC: #testmycode @ Freenode</p>
+
+<h3>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h3>
+
+<p>For new features, we recommend you discuss your idea first with the maintainers on IRC at #testmycode @ Freenode, just to guard against any duplicate efforts and to give us a chance to point you at the right component(s) for making the change. For large changes, it may make sense to create one or more GitHub issues to track progress.</p>
+
+<p>After that, just:</p>
 
 <ol>
-<li>Find the correct <a href="https://github.com/testmycode">repository</a> or repositories.</li>
-<li>Create an issue and briefly outline your plan before starting work on a patch. We'll do our best to comment in a timely manner.</li>
+<li>Find the correct <a href="https://github.com/testmycode">repository</a>.</li>
 <li>Set up a development environment as described in each projects README file. All products can be developed with the latest Ubuntu LTS. Other distros may require some fiddling. Root permissions are required for some things.</li>
-<li>Create a branch for your fix or feature. We prefer descriptive branch names.</li>
+<li>Create a branch for your fix or feature.</li>
 <li>Write the code and tests.</li>
 <li>
-<em>Remember to run entire test suite before submitting a pull request.</em> (We know it takes ages to run but it does catch a lot of bugs.)</li>
+<em>Remember to run entire test suite before submitting or updating a pull request.</em> (We know it takes ages to run but it does catch a lot of bugs.)</li>
 </ol>
 
 <p>It is a good idea to submit your pull request early for feedback,
@@ -99,6 +123,8 @@ in smaller iterations and have code reviewed and merged at reasonable checkpoint
 <p>Before reporting, please do a search to see if the issue has already been reported.</p>
 
 <p>Feature requests are also welcome in the issue tracker.</p>
+
+<p>You are also very welcome to ask any questions or discuss ideas on IRC at #testmycode @ Freenode.</p>
 
 <h3>
 <a name="testing-someones-pull-request" class="anchor" href="#testing-someones-pull-request"><span class="octicon octicon-link"></span></a>Testing someone's pull request</h3>
