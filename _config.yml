@@ -1,0 +1,12 @@
+# Site settings
+title: TestMyCode
+email: mooc@cs.helsinki.fi
+description: > # this means to ignore newlines until "baseurl:"
+  TestMyCode
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://testmycode.github.io" # the base hostname & protocol for your site
+github_username:  testmycode
+
+# Build settings
+markdown: redcarpet
+
