@@ -8,5 +8,5 @@ url: "http://testmycode.github.io" # the base hostname & protocol for your site
 github_username:  testmycode
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 
