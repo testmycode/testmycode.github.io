@@ -66,6 +66,10 @@ idea with the maintainers of TMC on IRC at #testmycode @ Freenode. This
 helps you to avoid duplicate effort as your idea may be worked on
 elsewhere as well -- if no one is working on that feature, we can point
 you to the right component(s) for making the change.
+Also before you start working on a larger contribution, you should get in
+touch with us first through the issue tracker with your idea so that we
+can help out and possibly guide you. Coordinating up front makes it much
+easier to avoid frustration later on.
 
 After that, just:
 
