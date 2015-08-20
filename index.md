@@ -29,16 +29,17 @@ programming process. Test My Code provides a lightweight instrument for
 tracking students' programming process on a key press by key press
 -level. This provides unprecedented insight into the learning process.
 
-
 The system has been used with great success by thousands of users at
 universities such as the University of Helsinki and Aalto University. It
 is also the tool that enables many of the MOOCs offered at
 [http://mooc.fi](http://mooc.fi).
 
 
-The code
+## The code
 All of the code is available under
 [https://github.com/testmycode](https://github.com/testmycode)
+
+## TMC subsystems
 
 The main components are:
 
@@ -46,6 +47,8 @@ The main components are:
 * [The NetBeans plugin](https://github.com/testmycode/tmc-netbeans)
 * [The User-mode Linux sandbox for running
 submissions](https://github.com/testmycode/tmc-sandbox)
+
+![System diagram](images/tmc-systems-diagram.png)
 
 The current maintainers are [@mpartel](https://github.com/mpartel) and
 [@jamox](https://github.com/jamox).
